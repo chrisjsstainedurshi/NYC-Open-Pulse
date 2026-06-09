@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+section {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.job {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid navy;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+}
