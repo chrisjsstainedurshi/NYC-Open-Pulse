@@ -21,5 +21,4 @@ if (filter) {
     });
 }
 
-// Simple welcome message
 console.log("Welcome to the Job Filing Website");
