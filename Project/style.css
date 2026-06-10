@@ -85,3 +85,19 @@ select {
     padding: 10px;
     margin-bottom: 20px;
 }
+
+.pie-chart {
+    position: relative;
+}
+
+.pie-chart::after {
+    content: "";
+    position: absolute;
+    width: 60%;          /* Controls the thickness of the chart ring */
+    height: 60%;
+    background: #fff;    /* Matches your page's exact background color */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the mask perfectly */
+}

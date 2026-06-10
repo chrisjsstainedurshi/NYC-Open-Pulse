@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="analysis.html">Job Analysis</a>
+    <a href="filter.html">Job Filter</a>
+    <a href="info.html">Information Page</a>
+    <a href="AnalysisPage.html">Analysis Page</a>
+    <a href="chart.html">Charts</a>
+</nav>
+<p>If a user wants to interact with my website through charts, they can access the information using the table I provided or the pie chart I created</p>
+
+<h2>Table</h2>
+<table>
+        <tr>
+            <th>Job</th>
+            <th>Salary</th>
+            <th>Growth</th>
+        </tr>
+
+        <tr>
+            <td>Programmer</td>
+            <td>$90,000</td>
+            <td>Fast</td>
+        </tr>
+
+        <tr>
+            <td>Nurse</td>
+            <td>$80,000</td>
+            <td>Very Fast</td>
+        </tr>
+
+        <tr>
+            <td>Manager</td>
+            <td>$75,000</td>
+            <td>Medium</td>
+        </tr>
+    </table>
+
+<h2>Pie Chart</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Only Pie Chart</title>
+    <style>
+        /* Container to center and align everything cleanly */
+        .chart-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            font-family: sans-serif;
+            margin: 50px auto;
+            max-width: 500px;
+        }
+
+        /* The Pie Chart Base */
+        .pie-chart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Trims into a flawless circle shape */
+            
+            /* Conic gradient maps colors to distinct percentage stops */
+            background: conic-gradient(
+                #ff6384 0% 40%,    /* Slice 1: Job (40%) */
+                #36a2eb 40% 75%,   /* Slice 2: Salary (35% -> 40 to 75) */
+                #ffcc56 75% 100%   /* Slice 3: Growth (25% -> 75 to 100) */
+            );
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Side Chart Legend Styling */
+        .chart-legend {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Colored blocks next to the label descriptive text */
+        .color-box {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            margin-right: 12px;
+        }
+
+        .color-chrome { background-color: #ff6384; }
+        .color-safari { background-color: #36a2eb; }
+        .color-firefox { background-color: #ffcc56; }
+    </style>
+</head>
+<body>
+
+    <div class="chart-wrapper">
+        <!-- The pure CSS pie chart element -->
+        <div class="pie-chart"></div>
+
+        <!-- Accompanying description labels -->
+        <ul class="chart-legend">
+            <li class="legend-item">
+                <span class="color-box color-chrome"></span>
+                <strong>Job:</strong> &nbsp; 90%
+            </li>
+            <li class="legend-item">
+                <span class="color-box color-safari"></span>
+                <strong>Salary:</strong> &nbsp; 80%
+            </li>
+            <li class="legend-item">
+                <span class="color-box color-firefox"></span>
+                <strong>Growth:</strong> &nbsp; 75%
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

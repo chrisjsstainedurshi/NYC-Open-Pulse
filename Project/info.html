@@ -11,6 +11,8 @@
     <a href="analysis.html">Job Analysis</a>
     <a href="filter.html">Job Filter</a>
     <a href="info.html">Information Page</a>
+    <a href="AnalysisPage.html">Analysis Page</a>
+    <a href="chart.html">Charts</a>
 </nav>
 
 <h1>Job Filing Website Information Pages</h1>
@@ -20,3 +22,58 @@
 <a href="https://www.bls.gov/ooh/" target="_blank">Click on this hyperlink to learn more about becoming a Nurse</a>
 <hr>
  <a href="https://www.bls.gov/ooh/" target="_blank">Click on this hyperlink to learn more about becoming a Buisness Mangers</a>
+ <hr>
+
+<h2>Select a Job Type</h2>
+
+    <select id="jobFilter">
+        <option value="all">All Jobs</option>
+        <option value="tech">Technology</option>
+        <option value="health">Healthcare</option>
+        <option value="business">Business</option>
+    </select>
+
+    <div id="jobs">
+
+        <div class="job tech">
+            <h3>Web Developer</h3>
+        </div>
+
+        <div class="job health">
+            <h3>Registered Nurse</h3>
+        </div>
+
+        <div class="job business">
+            <h3>Business Manager</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+ <div class="card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400" alt="Programmer">
+        <h3>Computer Programmer</h3>
+        <p>Creates software and websites.</p>
+        <a href="https://www.bls.gov/ooh/" target="_blank">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=400" alt="Nurse">
+        <h3>Nurse</h3>
+        <p>Helps patients stay healthy and assist doctors.</p>
+        <a href="https://www.bls.gov/ooh/" target="_blank">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400" alt="Business">
+        <h3>Business Manager</h3>
+        <p>Leads employees and projects.</p>
+        <a href="https://www.bls.gov/ooh/" target="_blank">Learn More</a>
+    </div>
+</section>
+
+</body>
+</html>
